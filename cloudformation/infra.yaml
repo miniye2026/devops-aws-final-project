@@ -1,1 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Basic DevOps Infrastructure
 
+Resources:
+
+  MyBucket:
+    Type: AWS::S3::Bucket
+
+  MyEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0c02fb55956c7d316
